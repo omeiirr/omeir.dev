@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 // assets
 import Sun from 'assets/misc/Sun.svg';
 import Moon from 'assets/misc/Moon.svg';
+import { useTheme } from 'next-themes';
 
 const NavItem = ({ href, text }: any) => {
   const router = useRouter();

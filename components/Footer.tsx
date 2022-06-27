@@ -8,6 +8,7 @@ import Twitter from 'assets/socials/Twitter.svg';
 const commonSvgConfig = {
   height: '24',
   width: '24',
+  fill: '#6b7280',
 };
 const ExternalLink = ({ href, children }: any) => (
   <a
