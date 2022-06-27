@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -17,9 +17,9 @@ const NavItem = ({ href, text }: any) => {
   return (
     <Link href={href}>
       <a
-        className={`hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ${
+        className={`hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ml-2 ${
           isActive
-            ? 'font-semibold text-gray-800 dark:text-gray-200'
+            ? 'font-semibold text-gray-800 dark:text-gray-200 bg-gray-200 dark:bg-gray-800'
             : 'font-normal text-gray-600 dark:text-gray-400'
         }`}
       >
@@ -32,8 +32,23 @@ const NavItem = ({ href, text }: any) => {
 const Navbar = () => {
   const { resolvedTheme, setTheme } = useTheme();
 
+  const [showName, setShowName] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 180) setShowName(true);
+      else setShowName(false);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className='relative flex items-center justify-between w-full max-w-2xl p-8 pt-6 pb-6 mx-auto text-gray-900 border-gray-200 sm:pl-0 sm:pr-0 dark:border-gray-700 sm:pb-16 bg-gray-50 dark:bg-darkPrimary bg-opacity-60 dark:text-gray-100 '>
+    <nav
+      className='relative flex items-center justify-between w-full max-w-2xl px-8 py-4 mx-auto mb-8 text-gray-900 border-b-2 border-gray-200 sm:pl-0 sm:pr-0 dark:border-gray-700 sm:py-6 bg-gray-50 dark:bg-darkPrimary dark:text-gray-100 '
+      // style={{ boxShadow: '2px 8px 20px -10px rgba(0,0,0,0.3)' }}
+    >
       {/* <a href='#skip' className='skip-nav'>
         Skip to content
       </a> */}
@@ -44,6 +59,12 @@ const Navbar = () => {
         <NavItem href='/experience' text='Experience' />
         <NavItem href='/resume' text='Resume' />
       </div>
+
+      <h3
+        className={`text-lg font-medium sm:hidden ${!showName ? 'hidden' : ''}`}
+      >
+        Omeir Fawaz
+      </h3>
 
       <button
         aria-label='Toggle Dark Mode'
