@@ -8,7 +8,7 @@ import Twitter from 'assets/socials/Twitter.svg';
 const commonSvgConfig = {
   height: '24',
   width: '24',
-  fill: '#6b7280',
+  // fill: '#6b7280',
 };
 const ExternalLink = ({ href, children }: any) => (
   <a
@@ -44,13 +44,22 @@ const Footer = () => {
         </div>
         <div className='flex gap-4'>
           <ExternalLink href='https://twitter.com/omeiirr'>
-            <Twitter {...commonSvgConfig} />
+            <Twitter
+              {...commonSvgConfig}
+              className='transition 500 fill-gray-500 hover:fill-gray-700'
+            />
           </ExternalLink>
           <ExternalLink href='https://github.com/omeiirr'>
-            <Github {...commonSvgConfig} />
+            <Github
+              {...commonSvgConfig}
+              className='transition 500 fill-gray-500 hover:fill-gray-700'
+            />
           </ExternalLink>
           <ExternalLink href='https://linkedin.com/in/omeir-fawaz'>
-            <Linkedin {...commonSvgConfig} />
+            <Linkedin
+              {...commonSvgConfig}
+              className='transition 500 fill-gray-500 hover:fill-gray-700'
+            />
           </ExternalLink>
         </div>
       </div>
