@@ -18,7 +18,9 @@ const Layout = ({ children }: any) => {
         id='skip'
         className='flex flex-col justify-center px-8 bg-gray-50 dark:bg-darkPrimary'
       >
-        {children}
+        <div className='flex flex-col items-start justify-center max-w-2xl pb-16 mx-auto border-gray-200 dark:border-gray-700'>
+          {children}
+        </div>
         <Footer />
       </main>
     </div>
