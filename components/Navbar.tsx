@@ -26,11 +26,7 @@ const NavItem = ({ href, text }: any) => {
 };
 
 const Navbar = () => {
-  const [theme, setTheme] = useState(localStorage.getItem('theme'));
-
-  useEffect(() => {
-    localStorage.setItem('theme', theme || 'dark');
-  }, [theme]);
+  const [theme, setTheme] = useState('dark');
 
   return (
     <nav className='relative flex items-center justify-between w-full max-w-2xl pt-8 pb-8 mx-auto text-gray-900 border-gray-200 dark:border-gray-700 sm:pb-16 bg-gray-50 dark:bg-gray-900 bg-opacity-60 dark:text-gray-100'>
