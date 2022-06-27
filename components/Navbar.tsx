@@ -1,6 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+
+// components
+import MobileMenu from 'components/MobileMenu';
 
 // assets
 import Sun from 'assets/misc/Sun.svg';
@@ -35,7 +38,7 @@ const Navbar = () => {
         Skip to content
       </a> */}
       <div className='ml-[-0.60rem]'>
-        {/* <MobileMenu /> */}
+        <MobileMenu />
         <NavItem href='/' text='Home' />
         <NavItem href='/projects' text='Projects' />
         <NavItem href='/experience' text='Experience' />
