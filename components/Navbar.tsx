@@ -26,10 +26,10 @@ const NavItem = ({ href, text }: any) => {
 };
 
 const Navbar = () => {
-  const [theme, setTheme] = useState('dark');
+  const { resolvedTheme, setTheme } = useTheme();
 
   return (
-    <nav className='relative flex items-center justify-between w-full max-w-2xl pt-8 pb-8 mx-auto text-gray-900 border-gray-200 dark:border-gray-700 sm:pb-16 bg-gray-50 dark:bg-gray-900 bg-opacity-60 dark:text-gray-100'>
+    <nav className='relative flex items-center justify-between w-full max-w-2xl p-8 pt-6 pb-6 mx-auto text-gray-900 border-gray-200 sm:pl-0 sm:pr-0 dark:border-gray-700 sm:pb-16 bg-gray-50 dark:bg-darkPrimary bg-opacity-60 dark:text-gray-100 '>
       {/* <a href='#skip' className='skip-nav'>
         Skip to content
       </a> */}
@@ -45,11 +45,13 @@ const Navbar = () => {
         aria-label='Toggle Dark Mode'
         type='button'
         className='flex items-center justify-center transition-all bg-gray-200 rounded-lg w-9 h-9 dark:bg-gray-600 hover:ring-2 ring-gray-300'
-        onClick={() =>
-          theme === 'light' ? setTheme('dark') : setTheme('light')
-        }
+        onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
       >
-        {theme === 'light' ? <Moon /> : <Sun />}
+        {resolvedTheme === 'dark' ? (
+          <Sun className='text-gray-800 dark:text-gray-200' />
+        ) : (
+          <Moon />
+        )}
       </button>
     </nav>
   );

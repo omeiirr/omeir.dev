@@ -6,7 +6,7 @@ import Navbar from 'components/Navbar';
 
 const Layout = ({ children }: any) => {
   return (
-    <div className=' bg-gray-50 dark:bg-gray-900'>
+    <div className=' bg-gray-50 dark:bg-darkPrimary'>
       <Head>
         <title>Omeir Fawaz - Developer Portfolio</title>
         <link rel='icon' href='/favicon.ico' />
@@ -18,7 +18,7 @@ const Layout = ({ children }: any) => {
       </div>
       <main
         id='skip'
-        className='flex flex-col justify-center px-8 bg-gray-50 dark:bg-gray-900'
+        className='flex flex-col justify-center px-8 bg-gray-50 dark:bg-darkPrimary'
       >
         {children}
         <Footer />
