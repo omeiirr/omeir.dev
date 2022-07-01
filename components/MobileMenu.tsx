@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import useDelayedRender from 'use-delayed-render';
 
 // styles
 import styles from 'styles/mobile-menu.module.css';
@@ -10,6 +11,14 @@ import Cross from 'assets/misc/Cross.svg';
 
 const MobileMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const { mounted: isMenuMounted, rendered: isMenuRendered } = useDelayedRender(
+    isMenuOpen,
+    {
+      enterDelay: 20,
+      exitDelay: 300,
+    }
+  );
 
   function toggleMenu() {
     if (isMenuOpen) {
@@ -66,19 +75,20 @@ const MobileMenu = () => {
           className='absolute w-5 h-5 text-gray-900 dark:text-gray-100'
         />
       </button>
-      {isMenuOpen && (
+      {isMenuMounted && (
         <ul
           className={`${
             styles.menu
           } absolute flex flex-col bg-gray-50 dark:bg-darkPrimary ${
-            isMenuOpen && styles.menuRendered
+            isMenuRendered && styles.menuRendered
           }`}
         >
           {burgerNavigationOptions.map((option, idx) => (
             <li
               key={idx}
-              className='text-sm font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100 '
+              className='font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100'
               style={{ transitionDelay: option.transitionDelay }}
+              onClick={() => setIsMenuOpen(false)}
             >
               <Link href={option.link}>
                 <a className='flex w-auto pb-6'>{option.title}</a>
