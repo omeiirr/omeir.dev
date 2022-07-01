@@ -61,7 +61,9 @@ const Navbar = () => {
       </div>
 
       <h3
-        className={`text-lg font-medium sm:hidden ${!showName ? 'hidden' : ''}`}
+        className={`text-lg font-medium sm:hidden transition-opacity duration-150  ${
+          !showName ? 'opacity-0' : 'opacity-100'
+        }`}
       >
         Omeir Fawaz
       </h3>
