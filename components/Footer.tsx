@@ -64,6 +64,18 @@ const Footer = () => {
         </div>
       </div>
       <p className='text-gray-500'>Built with Next.js, Tailwind and Vercel</p>
+      <p className='text-gray-500'>
+        Design inspired by{' '}
+        <a
+          href='https://leerob.io'
+          // href='https://twitter.com/leeerob'
+          target='_blank'
+          rel='noreferrer'
+          className='font-semibold underline'
+        >
+          Lee Robinson
+        </a>{' '}
+      </p>
     </footer>
   );
 };
