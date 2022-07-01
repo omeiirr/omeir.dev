@@ -16,23 +16,18 @@ const commonSvgConfig = {
   height: '52px',
 };
 
-const heading =
-  'mb-4 mt-4  text-2xl font-bold text-black md:text-3xl dark:text-white';
-
-const subheading = 'mb-4 text-xl text-gray-700 dark:text-gray-200';
-
 const Skills = () => {
   return (
     <>
-      <h3 className={heading}>Skills</h3>
-      <h3 className={subheading}>Languages</h3>
+      <h3 className='heading-text'>Skills</h3>
+      <h3 className='subheading-text'>Languages</h3>
       <div className='flex flex-wrap items-center justify-start gap-8 mb-6 '>
         <JavaScript {...commonSvgConfig} />
         <TypeScript {...commonSvgConfig} />
         <Golang {...commonSvgConfig} />
       </div>
 
-      <h3 className={subheading}>Front-end</h3>
+      <h3 className='subheading-text'>Front-end</h3>
       <div className='flex flex-wrap items-center justify-start gap-8 mb-6 '>
         <NextJS {...commonSvgConfig} className='dark:fill-white' />
         <React {...commonSvgConfig} />
@@ -40,7 +35,7 @@ const Skills = () => {
         <Sass {...commonSvgConfig} />
       </div>
 
-      <h3 className={subheading}>Back-end and DevOps</h3>
+      <h3 className='subheading-text'>Back-end and DevOps</h3>
       <div className='flex flex-wrap items-center justify-start gap-8 mb-6 '>
         <Node {...commonSvgConfig} />
         <Aws {...commonSvgConfig} />
