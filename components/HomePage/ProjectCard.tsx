@@ -1,6 +1,6 @@
 // assets
 import Github from 'assets/socials/Github.svg';
-import Javascript from 'assets/tech-icons/Javascript.svg';
+import JavaScript from 'assets/tech-icons/JavaScript.svg';
 import React from 'assets/tech-icons/React.svg';
 import Firebase from 'assets/tech-icons/Firebase.svg';
 import NextJS from 'assets/tech-icons/NextJS.svg';
@@ -70,7 +70,7 @@ const ProjectCard = ({
             {techUsed.includes('react') && <React {...commonSvgConfig} />}
             {techUsed.includes('firebase') && <Firebase {...commonSvgConfig} />}
             {techUsed.includes('javascript') && (
-              <Javascript {...commonSvgConfig} />
+              <JavaScript {...commonSvgConfig} />
             )}
             {techUsed.includes('puppeteer') && (
               <Puppeteer {...commonSvgConfig} />
