@@ -36,7 +36,7 @@ const ProjectCard = ({
       <div className='flex flex-col bg-white rounded-lg shadow-lg md:shadow-md dark:shadow-gray-600 dark:bg-darkPrimary md:flex-row '>
         {img && (
           <img
-            className='object-cover object-bottom w-full h-40 rounded-t-lg md:h-auto md:w-80 md:rounded-none md:rounded-l-lg'
+            className='object-cover object-top w-full h-40 rounded-t-lg md:h-auto md:w-80 md:rounded-none md:rounded-l-lg'
             src={img}
             alt={title}
           />
