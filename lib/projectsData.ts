@@ -39,9 +39,18 @@ export const allProjects = [
     githubLink: 'https://github.com/omeiirr/amizone-fetch-api',
   },
   {
+    title: 'SDE Handbook',
+    img: 'https://user-images.githubusercontent.com/54888682/176995533-4e452c67-3418-47d4-b683-5617538a5432.png',
+    description:
+      'A collection of curated, easily-accessible notes I make while learning about software development.',
+    techUsed: ['javascript'],
+    demoLink: 'https://omeiirr.github.io/SDE-Handbook',
+    githubLink: 'https://github.com/omeiirr/SDE-Handbook',
+  },
+  {
     title: 'Rock Paper Scissors',
     img: 'https://omeiirr.github.io/Portfolio/images/projects/rock-paper-scissors.png',
-    description: 'An online rendition of the classic game Rock-Paper-Scissors ',
+    description: 'An online rendition of the classic game Rock-Paper-Scissors.',
     techUsed: ['javascript'],
     demoLink: 'https://omeiirr.github.io/Rock-Paper-Scissors/',
     githubLink: 'https://github.com/omeiirr/Rock-Paper-Scissors',
