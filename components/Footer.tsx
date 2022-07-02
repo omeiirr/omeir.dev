@@ -12,7 +12,7 @@ const commonSvgConfig = {
 };
 const ExternalLink = ({ href, children }: any) => (
   <a
-    className='text-gray-500 transition hover:text-gray-800'
+    className='font-semibold text-gray-500 transition-all duration-200 hover:underline'
     target='_blank'
     rel='noopener noreferrer'
     href={href}
@@ -63,18 +63,15 @@ const Footer = () => {
           </ExternalLink>
         </div>
       </div>
-      <p className='text-gray-500'>Built with Next.js, Tailwind and Vercel</p>
+      <p className='text-gray-500'>
+        Built with{' '}
+        <ExternalLink href='https://nextjs.org'>Next.js</ExternalLink>,{' '}
+        <ExternalLink href='https://tailwindcss.com'>Tailwind</ExternalLink>,
+        and <ExternalLink href='https://vercel.com'>Vercel</ExternalLink>
+      </p>
       <p className='text-gray-500'>
         Design inspired by{' '}
-        <a
-          href='https://leerob.io'
-          // href='https://twitter.com/leeerob'
-          target='_blank'
-          rel='noreferrer'
-          className='font-semibold underline'
-        >
-          Lee Robinson
-        </a>{' '}
+        <ExternalLink href='https://leerob.io'>Lee Robinson</ExternalLink>{' '}
       </p>
     </footer>
   );
