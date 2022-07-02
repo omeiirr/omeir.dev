@@ -6,6 +6,9 @@ import ProjectCard from 'components/HomePage/ProjectCard';
 // lib
 import { mainProjects } from 'lib/projectsData';
 
+// assets
+import RightArrow from 'assets/misc/RightArrow.svg';
+
 const FeaturedProjects = () => {
   return (
     <>
@@ -24,8 +27,9 @@ const FeaturedProjects = () => {
       ))}
 
       <Link href='/projects'>
-        <p className='text-lg cursor-pointer subheading-text '>
-          See all projects
+        <p className='flex items-center gap-2 text-base font-semibold cursor-pointer'>
+          See all projects{' '}
+          <RightArrow className='w-4 stroke-1 dark:fill-white' />
         </p>
       </Link>
     </>

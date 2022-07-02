@@ -10,7 +10,7 @@ const Introduction = () => {
         <h2 className='mb-4 text-xl text-gray-700 dark:text-gray-200'>
           Student, Developer
         </h2>
-        <p className='mb-10 text-gray-600 dark:text-gray-400'>
+        <p className='mb-10 text-lg text-gray-600 dark:text-gray-400'>
           I enjoy creating elegant user experiences with secure &amp; scalable
           back-ends. Interested in Linux, Cloud Computing, and DevOps.
         </p>
