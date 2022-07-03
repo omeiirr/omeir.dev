@@ -22,14 +22,11 @@ class MyDocument extends Document {
           <meta name='twitter:card' content='summary' />
           <meta name='twitter:site' content='@omeiirr' />
           <meta name='twitter:title' content='Omeir Fawaz' />
-          <meta
-            name='twitter:description'
-            content='Omeir Fawaz - Developer Portfolio'
-          />
-          <meta
+          <meta name='twitter:description' content='Developer Portfolio' />
+          {/* <meta
             name='twitter:image'
             content='https://www.schedd.xyz/logo-192x192.png'
-          />
+          /> */}
         </Head>
         <body>
           <Main />
