@@ -1,3 +1,5 @@
+import Head from 'next/head';
+
 // components
 import Layout from 'components/Layout';
 import Introduction from 'components/HomePage/Introduction';
@@ -7,12 +9,18 @@ import ContactMe from 'components/HomePage/ContactMe';
 
 const Home = () => {
   return (
-    <Layout>
-      <Introduction />
-      <Skills />
-      <FeaturedProjects />
-      <ContactMe />
-    </Layout>
+    <>
+      <Head>
+        <title>Omeir Fawaz - Developer Portfolio</title>
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
+      <Layout>
+        <Introduction />
+        <Skills />
+        <FeaturedProjects />
+        <ContactMe />
+      </Layout>
+    </>
   );
 };
 
