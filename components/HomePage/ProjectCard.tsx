@@ -9,6 +9,9 @@ import Node from 'assets/tech-icons/Node.svg';
 import Puppeteer from 'assets/tech-icons/Puppeteer.svg';
 import ExternalLink from 'assets/misc/ExternalLink.svg';
 
+// libraries
+import ReactGA from 'react-ga4';
+
 const commonSvgConfig = {
   width: '36px',
   height: '36px',
@@ -48,10 +51,28 @@ const ProjectCard = ({
             </h5>
 
             <div className='flex gap-4 '>
-              <a href={githubLink} target='_blank' rel='noreferrer'>
+              <a
+                href={githubLink}
+                target='_blank'
+                rel='noreferrer'
+                onClick={() => {
+                  ReactGA.event(`gh_${title.replaceAll(' ', '')}`, {
+                    event_category: 'PROJECTS',
+                  });
+                }}
+              >
                 <Github height='22' className='dark:fill-white' />
               </a>
-              <a href={demoLink} target='_blank' rel='noreferrer'>
+              <a
+                href={demoLink}
+                target='_blank'
+                rel='noreferrer'
+                onClick={() => {
+                  ReactGA.event(`demo_${title.replaceAll(' ', '')}`, {
+                    event_category: 'PROJECTS',
+                  });
+                }}
+              >
                 <ExternalLink height='20' className='dark:fill-white' />
               </a>
             </div>
