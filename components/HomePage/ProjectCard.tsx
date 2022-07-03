@@ -33,7 +33,7 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <div className='flex justify-center mt-2 mb-6'>
-      <div className='flex flex-col bg-white rounded-lg shadow-lg md:shadow-md dark:shadow-gray-600 dark:bg-darkPrimary md:flex-row '>
+      <div className='flex flex-col dark:border-gray-600 rounded-lg shadow-lg  border-[1px] md:shadow-md md:flex-row '>
         {img && (
           <img
             className='object-cover object-top w-full h-40 rounded-t-lg md:h-auto md:w-80 md:rounded-none md:rounded-l-lg'
