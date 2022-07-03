@@ -2,15 +2,26 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+// libraries
+import { useTheme } from 'next-themes';
+import ReactGA from 'react-ga4';
+
 // components
 import MobileMenu from 'components/MobileMenu';
 
 // assets
 import Sun from 'assets/misc/Sun.svg';
 import Moon from 'assets/misc/Moon.svg';
-import { useTheme } from 'next-themes';
+import ExternalLink from 'assets/misc/ExternalLink.svg';
 
-const NavItem = ({ href, text }: any) => {
+// lib
+import { resumeLink } from 'lib/resumeLink';
+
+interface NavItemProps {
+  href: string;
+  text: string;
+}
+const NavItem = ({ href, text }: NavItemProps) => {
   const router = useRouter();
   const isActive = router.asPath === href;
 
@@ -31,8 +42,8 @@ const NavItem = ({ href, text }: any) => {
 
 const Navbar = () => {
   const { resolvedTheme, setTheme } = useTheme();
-
   const [showName, setShowName] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 180) setShowName(true);
@@ -45,19 +56,32 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav
-      className='relative flex items-center justify-between w-full max-w-2xl px-8 py-4 mx-auto mb-8 text-gray-900 border-b-2 border-gray-200 sm:pl-0 sm:pr-0 dark:border-gray-700 sm:py-6 bg-gray-50 dark:bg-darkPrimary dark:text-gray-100 '
-      // style={{ boxShadow: '2px 8px 20px -10px rgba(0,0,0,0.3)' }}
-    >
-      {/* <a href='#skip' className='skip-nav'>
-        Skip to content
-      </a> */}
+    <nav className='relative flex items-center justify-between w-full max-w-2xl px-8 py-4 mx-auto mb-8 text-gray-900 border-b-2 border-gray-200 sm:pl-0 sm:pr-0 dark:border-gray-700 sm:py-6 bg-gray-50 dark:bg-darkPrimary dark:text-gray-100 '>
       <div className='ml-[-0.60rem]'>
         <MobileMenu />
         <NavItem href='/' text='Home' />
         <NavItem href='/projects' text='Projects' />
         <NavItem href='/experience' text='Experience' />
-        <NavItem href='/resume' text='Resume' />
+
+        <a
+          href={resumeLink}
+          target='_blank'
+          rel='noreferrer'
+          className={`hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ml-2 font-normal text-gray-600 dark:text-gray-400`}
+          onClick={() =>
+            ReactGA.event('resumeOpened__web', {
+              event_category: 'APP',
+            })
+          }
+        >
+          <span className='flex items-center gap-1 capsize'>
+            Resume
+            <ExternalLink
+              height={14}
+              className='fill-gray-600 dark:fill-gray-400'
+            />
+          </span>
+        </a>
       </div>
 
       <h3

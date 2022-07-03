@@ -8,6 +8,11 @@ import styles from 'styles/mobile-menu.module.css';
 // assets
 import BurgerMenu from 'assets/misc/BurgerMenu.svg';
 import Cross from 'assets/misc/Cross.svg';
+import ExternalLink from 'assets/misc/ExternalLink.svg';
+import ReactGA from 'react-ga4';
+
+// lib
+import { resumeLink } from 'lib/resumeLink';
 
 const MobileMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,11 +57,6 @@ const MobileMenu = () => {
       title: 'Experience',
       transitionDelay: '200ms',
     },
-    {
-      link: '/resume',
-      title: 'Resume',
-      transitionDelay: '250ms',
-    },
   ];
   return (
     <>
@@ -95,6 +95,33 @@ const MobileMenu = () => {
               </Link>
             </li>
           ))}
+
+          {/* External link to resume  */}
+          <li
+            className='font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100'
+            style={{ transitionDelay: '250ms' }}
+            onClick={() => {
+              setIsMenuOpen(false);
+              ReactGA.event('resumeOpened__mob', {
+                event_category: 'APP',
+              });
+            }}
+          >
+            <a
+              href={resumeLink}
+              target='_blank'
+              rel='noreferrer'
+              className='flex items-center gap-2 '
+            >
+              Resume
+              <span>
+                <ExternalLink
+                  height={16}
+                  className='fill-gray-900 dark:fill-gray-100'
+                />
+              </span>
+            </a>
+          </li>
         </ul>
       )}
     </>
