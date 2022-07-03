@@ -10,7 +10,23 @@ class MyDocument extends Document {
             content='Omeir Fawaz - Developer Portfolio'
           />
 
-          <link rel='icon' href='/vercel.svg' />
+          <link
+            rel='apple-touch-icon'
+            sizes='180x180'
+            href='/apple-touch-icon.png'
+          />
+          <link
+            rel='icon'
+            type='image/png'
+            sizes='32x32'
+            href='/favicon-32x32.png'
+          />
+          <link
+            rel='icon'
+            type='image/png'
+            sizes='16x16'
+            href='/favicon-16x16.png'
+          />
 
           {/* Link manifest.json
           <link rel='manifest' href='/manifest.json' />
@@ -23,10 +39,10 @@ class MyDocument extends Document {
           <meta name='twitter:site' content='@omeiirr' />
           <meta name='twitter:title' content='Omeir Fawaz' />
           <meta name='twitter:description' content='Developer Portfolio' />
-          {/* <meta
+          <meta
             name='twitter:image'
-            content='https://www.schedd.xyz/logo-192x192.png'
-          /> */}
+            content='https://www.omeir.dev/android-chrome-192x192.png'
+          />
         </Head>
         <body>
           <Main />
