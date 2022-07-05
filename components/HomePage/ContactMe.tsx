@@ -4,6 +4,9 @@ import Linkedin from 'assets/socials/Linkedin.svg';
 import Twitter from 'assets/socials/Twitter.svg';
 import Github from 'assets/socials/Github.svg';
 
+// libraries
+import ReactGA from 'react-ga4';
+
 const commonSvgConfig = {
   height: '28',
 };
@@ -11,23 +14,27 @@ const commonSvgConfig = {
 const contactOptions = [
   {
     icon: <Gmail {...commonSvgConfig} />,
-    displayText: 'omeirf.02',
+    displayText: 'omeirf.02@gmail.com',
     link: 'mailto:omeirf.02@gmail.com',
+    analyticsTag: 'gmail',
   },
   {
     icon: <Linkedin {...commonSvgConfig} className='bg-white rounded-[3px]' />,
     displayText: 'omeir-fawaz',
     link: 'https://linkedin.com/in/omeir-fawaz',
+    analyticsTag: 'linkedin',
   },
   {
     icon: <Twitter {...commonSvgConfig} />,
     displayText: 'omeiirr',
     link: 'https://twitter.com/omeiirr',
+    analyticsTag: 'twitter',
   },
   {
     icon: <Github {...commonSvgConfig} className='dark:fill-white' />,
     displayText: 'omeiirr',
     link: 'https://github.com/omeiirr',
+    analyticsTag: 'gmail',
   },
 ];
 const ContactMe = () => {
@@ -42,7 +49,17 @@ const ContactMe = () => {
             href={option.link}
             target='_blank'
             rel='noreferrer'
-            className='flex items-center gap-4 mb-4 font-semibold hover:underline text-md '
+            onClick={() =>
+              ReactGA.event(`visited_${option.analyticsTag}`, {
+                event_category: 'SOCIAL',
+              })
+            }
+            onCopy={() =>
+              ReactGA.event(`copied_${option.analyticsTag}`, {
+                event_category: 'SOCIAL',
+              })
+            }
+            className='flex items-center gap-4 mb-4 underline md:no-underline md:hover:underline text-md '
           >
             {option.icon}
             <span>{option.displayText}</span>

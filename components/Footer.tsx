@@ -5,6 +5,9 @@ import Github from 'assets/socials/Github.svg';
 import Linkedin from 'assets/socials/Linkedin.svg';
 import Twitter from 'assets/socials/Twitter.svg';
 
+// libraries
+import ReactGA from 'react-ga4';
+
 const commonSvgConfig = {
   height: '24',
   width: '24',
@@ -24,6 +27,24 @@ const ExternalLink = ({ href, children }: any) => (
     {children}
   </a>
 );
+
+const externalLinkOptions = [
+  {
+    href: 'https://github.com/omeiirr',
+    icon: <Github {...commonSvgConfig} className={svgStyles} />,
+    analyticsTag: 'github',
+  },
+  {
+    href: 'https://twitter.com/omeiirr',
+    icon: <Twitter {...commonSvgConfig} className={svgStyles} />,
+    analyticsTag: 'twitter',
+  },
+  {
+    href: 'https://linkedin.com/omeiirr',
+    icon: <Linkedin {...commonSvgConfig} className={svgStyles} />,
+    analyticsTag: 'linkedin',
+  },
+];
 
 const Footer = () => {
   return (
@@ -50,15 +71,18 @@ const Footer = () => {
         </div>
 
         <div className='flex gap-4'>
-          <ExternalLink href='https://twitter.com/omeiirr'>
-            <Twitter {...commonSvgConfig} className={svgStyles} />
-          </ExternalLink>
-          <ExternalLink href='https://github.com/omeiirr'>
-            <Github {...commonSvgConfig} className={svgStyles} />
-          </ExternalLink>
-          <ExternalLink href='https://linkedin.com/in/omeir-fawaz'>
-            <Linkedin {...commonSvgConfig} className={svgStyles} />
-          </ExternalLink>
+          {externalLinkOptions.map((option, idx) => (
+            <ExternalLink
+              href={option.href}
+              onClick={() =>
+                ReactGA.event(`visited_${option.analyticsTag}`, {
+                  event_category: 'SOCIAL',
+                })
+              }
+            >
+              {option.icon}
+            </ExternalLink>
+          ))}
         </div>
       </div>
 
