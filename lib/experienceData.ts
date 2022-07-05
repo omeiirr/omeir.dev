@@ -11,7 +11,7 @@ export const experienceData = [
       'Online travel agency with 50k daily visitors; part of a team to renovate website using the React ecosystem',
       'Created an easy-to-use dashboard for stakeholders',
       'Implemented JWT auth, reusable components for use across the website',
-      'Reprogrammed APIs from Node to Golang for better performace and latency',
+      'Reprogrammed APIs from Node to Golang for better performance and latency',
     ],
   },
   {
