@@ -1,9 +1,23 @@
 export const experienceData = [
   {
+    orgName: 'MLH Fellowship',
+    orgLink: 'https://fellowship.mlh.io',
+    from: 'July 2022',
+    to: 'August 2022',
+    position: 'Prep Fellow',
+    location: 'Remote',
+    desc: 'Revamped the website',
+    workDone: [
+      'An internship alternative program in which I collaborated with people from all over the world on open-source projects',
+      'Made contribututions to portfolio project made with Jekyll (https://mlh-fellowship.github.io/prep-portfolio-22.AUG.PREP.2/)',
+      'Made contribututions to a weather app made with React (https://mlh-fellowship.github.io/prep-project-22.AUG.PREP.2/)',
+    ],
+  },
+  {
     orgName: 'SaffronStays',
     orgLink: 'https://saffronstays.com',
     from: 'June 2021',
-    to: 'present',
+    to: 'June 2022',
     position: 'Web Development Intern',
     location: 'Remote',
     desc: 'Revamped the website',
