@@ -9,8 +9,8 @@ export const experienceData = [
     desc: 'Revamped the website',
     workDone: [
       'An internship alternative program in which I collaborated with people from all over the world on open-source projects',
-      'Made contribututions to portfolio project made with Jekyll (https://mlh-fellowship.github.io/prep-portfolio-22.AUG.PREP.2/)',
-      'Made contribututions to a weather app made with React (https://mlh-fellowship.github.io/prep-project-22.AUG.PREP.2/)',
+      'Made contributions to portfolio project made with Jekyll (https://mlh-fellowship.github.io/prep-portfolio-22.AUG.PREP.2/)',
+      'Made contributions to a weather app made with React (https://mlh-fellowship.github.io/prep-project-22.AUG.PREP.2/)',
     ],
   },
   {
