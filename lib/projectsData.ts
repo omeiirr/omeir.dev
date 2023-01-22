@@ -69,7 +69,7 @@ export const allProjects = [
     title: 'Go Blockchain Demo',
     img: '',
     description:
-      'A simple blockchain made using Go.',
+      'A simple blockchain made using Go. This was made only as a proof of concept, and runs only on localhost for now.',
     techUsed: ['golang'],
     demoLink: 'https://github.com/omeiirr/go-blockchain-demo',
     githubLink: 'https://github.com/omeiirr/go-blockchain-demo',
