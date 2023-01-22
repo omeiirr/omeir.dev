@@ -5,6 +5,7 @@ import React from 'assets/tech-icons/React.svg';
 import Firebase from 'assets/tech-icons/Firebase.svg';
 import NextJS from 'assets/tech-icons/NextJS.svg';
 import TailwindCSS from 'assets/tech-icons/TailwindCSS.svg';
+import Golang from 'assets/tech-icons/Golang.svg';
 import Node from 'assets/tech-icons/Node.svg';
 import Puppeteer from 'assets/tech-icons/Puppeteer.svg';
 import ExternalLink from 'assets/misc/ExternalLink.svg';
@@ -87,6 +88,7 @@ const ProjectCard = ({
             {techUsed.includes('tailwind') && (
               <TailwindCSS {...commonSvgConfig} />
             )}
+            {techUsed.includes('golang') && <Golang {...commonSvgConfig} />}
             {techUsed.includes('node') && <Node {...commonSvgConfig} />}
             {techUsed.includes('react') && <React {...commonSvgConfig} />}
             {techUsed.includes('firebase') && <Firebase {...commonSvgConfig} />}

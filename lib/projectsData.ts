@@ -9,13 +9,22 @@ export const mainProjects = [
     githubLink: 'https://github.com/omeiirr/schedd',
   },
   {
-    title: 'Amizone Web Scraper',
-    img: '',
+    title: 'React Table Demo',
+    img: 'https://user-images.githubusercontent.com/54888682/213927867-702ace64-9b6b-4847-825b-6f3ee72971b4.png',
     description:
-      'A web scraper built with Puppeteer to scrape lecture schedule, attendance, grades, etc. from my college website, Amizone.',
-    techUsed: ['node', 'puppeteer'],
-    demoLink: 'https://amizone-fetch.herokuapp.com/',
-    githubLink: 'https://github.com/omeiirr/amizone-fetch-api',
+      'A demo and guide for using react-table with react-query for dispaying tabular data, with CRUD functionality using NextJS API routes.',
+    techUsed: ['nextjs', 'tailwind'],
+    demoLink: 'https://react-table-demo-nu.vercel.app',
+    githubLink: 'https://github.com/omeiirr/react-table-demo',
+  },
+  {
+    title: 'Valodex',
+    img: 'https://user-images.githubusercontent.com/54888682/213928038-eda00b86-f1af-46aa-b580-bd14fc11f5bd.png',
+    description:
+      'An index for the agents of the popular video-game Valorant. Displays agents, their color palette, origins, powers, voicelines and more.',
+    techUsed: ['nextjs', 'tailwind'],
+    demoLink: 'https://valodex.vercel.app',
+    githubLink: 'https://github.com/omeiirr/valodex',
   },
 ];
 
@@ -28,6 +37,42 @@ export const allProjects = [
     techUsed: ['nextjs', 'tailwind'],
     demoLink: 'https://schedd.xyz',
     githubLink: 'https://github.com/omeiirr/schedd',
+  },
+  {
+    title: 'React Table Demo',
+    img: 'https://user-images.githubusercontent.com/54888682/213927867-702ace64-9b6b-4847-825b-6f3ee72971b4.png',
+    description:
+      'A demo and guide for using react-table with react-query for dispaying tabular data, with CRUD functionality using NextJS API routes.',
+    techUsed: ['nextjs', 'tailwind'],
+    demoLink: 'https://react-table-demo-nu.vercel.app',
+    githubLink: 'https://github.com/omeiirr/react-table-demo',
+  },
+  {
+    title: 'Valodex',
+    img: 'https://user-images.githubusercontent.com/54888682/213928038-eda00b86-f1af-46aa-b580-bd14fc11f5bd.png',
+    description:
+      'An index for the agents of the popular video-game Valorant. Displays agents, their color palette, origins, powers, voicelines and more.',
+    techUsed: ['nextjs', 'tailwind'],
+    demoLink: 'https://valodex.vercel.app',
+    githubLink: 'https://github.com/omeiirr/valodex',
+  },
+  {
+    title: 'Quran Obsidian Template',
+    img: 'https://user-images.githubusercontent.com/54888682/211851887-903016c7-9969-4e77-b4fc-54b3c1ecf42d.png',
+    description:
+      'A template to take Quran notes, meant for use with Obsidian.',
+    techUsed: ['golang'],
+    demoLink: 'https://github.com/omeiirr/quran-obsidian-template',
+    githubLink: 'https://github.com/omeiirr/quran-obsidian-template',
+  },
+  {
+    title: 'Go Blockchain Demo',
+    img: '',
+    description:
+      'A simple blockchain made using Go.',
+    techUsed: ['golang'],
+    demoLink: 'https://github.com/omeiirr/go-blockchain-demo',
+    githubLink: 'https://github.com/omeiirr/go-blockchain-demo',
   },
   {
     title: 'Amizone Web Scraper',
