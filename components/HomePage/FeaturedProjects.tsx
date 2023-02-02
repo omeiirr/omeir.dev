@@ -4,7 +4,7 @@ import Link from 'next/link';
 import ProjectCard from 'components/HomePage/ProjectCard';
 
 // lib
-import { mainProjects } from 'lib/projectsData';
+import { allProjects } from 'lib/projectsData';
 
 // assets
 import RightArrow from 'assets/misc/RightArrow.svg';
@@ -14,7 +14,7 @@ const FeaturedProjects = () => {
     <>
       <h3 className='heading-text'>Featured Projects</h3>
 
-      {mainProjects.map((project, idx) => (
+      {allProjects.slice(0,3).map((project, idx) => (
         <ProjectCard
           key={idx}
           title={project.title}
