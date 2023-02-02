@@ -35,7 +35,7 @@ export const allProjects = [
     description:
       ' A Progressive Web App built with Next.js and TailwindCSS to keep track of classes, attendance, grades, faculty, and more, for students of my university.',
     techUsed: ['nextjs', 'tailwind'],
-    demoLink: 'https://schedd.xyz',
+    demoLink: 'https://schedd.vercel.app',
     githubLink: 'https://github.com/omeiirr/schedd',
   },
   {
@@ -46,6 +46,14 @@ export const allProjects = [
     techUsed: ['nextjs', 'tailwind'],
     demoLink: 'https://react-table-demo-nu.vercel.app',
     githubLink: 'https://github.com/omeiirr/react-table-demo',
+  },
+  {
+    title: 'Dummy Data API',
+    description:
+      'Get dummy data for development and testing purposes. Built with Go, AWS Lambda, and API Gateway',
+    techUsed: ['golang', 'aws'],
+    demoLink: 'https://fl8peowhy3.execute-api.ap-south-1.amazonaws.com/v1/users',
+    githubLink: 'https://github.com/omeiirr/dummy-data-api',
   },
   {
     title: 'Valodex',
