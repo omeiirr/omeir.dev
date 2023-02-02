@@ -49,6 +49,7 @@ export const allProjects = [
   },
   {
     title: 'Dummy Data API',
+    img: '',
     description:
       'Get dummy data for development and testing purposes. Built with Go, AWS Lambda, and API Gateway',
     techUsed: ['golang', 'aws'],
