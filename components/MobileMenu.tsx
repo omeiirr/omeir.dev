@@ -12,7 +12,7 @@ import ExternalLink from 'assets/misc/ExternalLink.svg';
 import ReactGA from 'react-ga4';
 
 // lib
-import { resumeLink } from 'lib/resumeLink';
+import { blogLink, resumeLink } from 'lib/externalLinks';
 
 const MobileMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -95,6 +95,33 @@ const MobileMenu = () => {
               </Link>
             </li>
           ))}
+
+          {/* External link to blog  */}
+          <li
+            className='pb-6 font-semibold text-gray-900 border-b border-gray-300 dark:border-gray-700 dark:text-gray-100'
+            style={{ transitionDelay: '225ms' }}
+            onClick={() => {
+              setIsMenuOpen(false);
+              ReactGA.event('blogOpened__mob', {
+                event_category: 'APP',
+              });
+            }}
+          >
+            <a
+              href={blogLink}
+              target='_blank'
+              rel='noreferrer'
+              className='flex items-center gap-2 '
+            >
+              Blog
+              {/* <span>
+                <ExternalLink
+                  height={16}
+                  className='fill-gray-900 dark:fill-gray-100'
+                />
+              </span> */}
+            </a>
+          </li>
 
           {/* External link to resume  */}
           <li

@@ -15,12 +15,15 @@ import Moon from 'assets/misc/Moon.svg';
 import ExternalLink from 'assets/misc/ExternalLink.svg';
 
 // lib
-import { resumeLink } from 'lib/resumeLink';
+import { blogLink, resumeLink } from 'lib/externalLinks';
 
 interface NavItemProps {
   href: string;
   text: string;
 }
+
+const externalLinkStyling = `hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ml-2 font-normal text-gray-600 dark:text-gray-400`;
+
 const NavItem = ({ href, text }: NavItemProps) => {
   const router = useRouter();
   const isActive = router.asPath === href;
@@ -64,10 +67,30 @@ const Navbar = () => {
         <NavItem href='/experience' text='Experience' />
 
         <a
+          href={blogLink}
+          target='_blank'
+          rel='noreferrer'
+          className={externalLinkStyling}
+          onClick={() =>
+            ReactGA.event('blogOpened__web', {
+              event_category: 'APP',
+            })
+          }
+        >
+          <span className='flex items-center gap-1 capsize'>
+            Blog
+            {/* <ExternalLink
+              height={14}
+              className='fill-gray-600 dark:fill-gray-400'
+            /> */}
+          </span>
+        </a>
+
+        <a
           href={resumeLink}
           target='_blank'
           rel='noreferrer'
-          className={`hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all ml-2 font-normal text-gray-600 dark:text-gray-400`}
+          className={externalLinkStyling}
           onClick={() =>
             ReactGA.event('resumeOpened__web', {
               event_category: 'APP',
