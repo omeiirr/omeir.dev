@@ -12,7 +12,7 @@ export const mainProjects = [
     title: 'React Table Demo',
     img: 'https://user-images.githubusercontent.com/54888682/213927867-702ace64-9b6b-4847-825b-6f3ee72971b4.png',
     description:
-      'A demo and guide for using react-table with react-query for dispaying tabular data, with CRUD functionality using NextJS API routes.',
+      'A demo and guide for using react-table with react-query for displaying tabular data, with CRUD functionality using NextJS API routes.',
     techUsed: ['nextjs', 'tailwind'],
     demoLink: 'https://react-table-demo-nu.vercel.app',
     githubLink: 'https://github.com/omeiirr/react-table-demo',
@@ -57,6 +57,15 @@ export const allProjects = [
     githubLink: 'https://github.com/omeiirr/dummy-data-api',
   },
   {
+    title: 'Quran Obsidian Template',
+    img: 'https://user-images.githubusercontent.com/54888682/221333572-00aecdce-716f-4197-beaf-956aa92504ae.png',
+    description:
+      'A template to take Quran notes, meant for use with Obsidian.',
+    techUsed: ['golang'],
+    demoLink: 'https://github.com/omeiirr/quran-obsidian-template',
+    githubLink: 'https://github.com/omeiirr/quran-obsidian-template',
+  },
+  {
     title: 'Valodex',
     img: 'https://user-images.githubusercontent.com/54888682/213928038-eda00b86-f1af-46aa-b580-bd14fc11f5bd.png',
     description:
@@ -65,15 +74,7 @@ export const allProjects = [
     demoLink: 'https://valodex.vercel.app',
     githubLink: 'https://github.com/omeiirr/valodex',
   },
-  {
-    title: 'Quran Obsidian Template',
-    img: 'https://user-images.githubusercontent.com/54888682/211851887-903016c7-9969-4e77-b4fc-54b3c1ecf42d.png',
-    description:
-      'A template to take Quran notes, meant for use with Obsidian.',
-    techUsed: ['golang'],
-    demoLink: 'https://github.com/omeiirr/quran-obsidian-template',
-    githubLink: 'https://github.com/omeiirr/quran-obsidian-template',
-  },
+  
   {
     title: 'Go Blockchain Demo',
     img: '',
