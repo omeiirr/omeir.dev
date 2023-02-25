@@ -42,7 +42,7 @@ export const allProjects = [
     title: 'React Table Demo',
     img: 'https://user-images.githubusercontent.com/54888682/213927867-702ace64-9b6b-4847-825b-6f3ee72971b4.png',
     description:
-      'A demo and guide for using react-table with react-query for dispaying tabular data, with CRUD functionality using NextJS API routes.',
+      'A demo and guide for using react-table with react-query for displaying tabular data, with CRUD functionality using NextJS API routes.',
     techUsed: ['nextjs', 'tailwind'],
     demoLink: 'https://react-table-demo-nu.vercel.app',
     githubLink: 'https://github.com/omeiirr/react-table-demo',
