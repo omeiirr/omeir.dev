@@ -73,6 +73,7 @@ const Footer = () => {
         <div className='flex gap-4'>
           {externalLinkOptions.map((option, idx) => (
             <ExternalLink
+              key={idx}
               href={option.href}
               onClick={() =>
                 ReactGA.event(`visited_${option.analyticsTag}`, {
