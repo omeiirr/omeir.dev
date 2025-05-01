@@ -13,7 +13,7 @@ const Introduction = () => {
         <p className='mb-10 text-lg text-gray-600 dark:text-gray-400'>
           Specializing in enterprise information management.
           <br />
-          Hands-on experience in Power BI, Microsoft Purview, SharePoint, and the Microsoft Power Platform.
+          Hands-on experience in Microsoft tooling — Power BI, Purview, SharePoint, Power Platform.
           <br /> <br />
           I enjoy building with React/Tailwind and Golang.
         </p>
