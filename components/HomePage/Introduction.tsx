@@ -8,12 +8,13 @@ const Introduction = () => {
           Omeir Fawaz
         </h1>
         <h2 className='mb-4 text-xl text-gray-700 dark:text-gray-200'>
-          Data Engineer @ <a href="https://www.shell.com/" >Shell</a>
+          Data Engineer @ <a href="https://www.shell.com/" className='underline' >Shell</a>
         </h2>
         <p className='mb-10 text-lg text-gray-600 dark:text-gray-400'>
-          Associate Data Engineer at Shell, specializing in enterprise information management.
-          Hands-on experience in Power BI, Microsoft Purview, SharePoint, and the Microsoft Power Platform.
+          Specializing in enterprise information management.
           <br />
+          Hands-on experience in Power BI, Microsoft Purview, SharePoint, and the Microsoft Power Platform.
+          <br /> <br />
           I enjoy building with React/Tailwind and Golang.
         </p>
       </div>
