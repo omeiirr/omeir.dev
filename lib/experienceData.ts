@@ -1,5 +1,19 @@
 export const experienceData = [
   {
+    orgName: 'Shell',
+    orgLink: 'https://shell.com',
+    from: 'August 2023',
+    to: 'present',
+    position: 'Associate Data Engineer',
+    location: 'Bengaluru (India)',
+    desc: 'Revamped the website',
+    workDone: [
+      'Building Power BI dashboards for business insights and managing data governance with Microsoft Purview',
+      'Supporting collaboration through SharePoint and automating workflows with the Microsoft Power Platform.',
+      'Learning about core data engineering tools and practices — particularly Databricks, SQL, and Python'
+    ],
+  },
+  {
     orgName: 'MLH Fellowship',
     orgLink: 'https://fellowship.mlh.io',
     from: 'July 2022',
