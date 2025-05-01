@@ -18,23 +18,14 @@ export const mainProjects = [
     githubLink: 'https://github.com/omeiirr/instagram-analyzer',
   },
   {
-    title: 'React Table Demo',
-    img: 'https://user-images.githubusercontent.com/54888682/213927867-702ace64-9b6b-4847-825b-6f3ee72971b4.png',
+    title: 'Dummy Data API',
+    img: '',
     description:
-      'A demo and guide for using react-table with react-query for displaying tabular data, with CRUD functionality using NextJS API routes.',
-    techUsed: ['nextjs', 'tailwind'],
-    demoLink: 'https://react-table-demo-nu.vercel.app',
-    githubLink: 'https://github.com/omeiirr/react-table-demo',
-  },
-  {
-    title: 'Valodex',
-    img: 'https://user-images.githubusercontent.com/54888682/213928038-eda00b86-f1af-46aa-b580-bd14fc11f5bd.png',
-    description:
-      'An index for the agents of the popular video-game Valorant. Displays agents, their color palette, origins, powers, voicelines and more.',
-    techUsed: ['nextjs', 'tailwind'],
-    demoLink: 'https://valodex.vercel.app',
-    githubLink: 'https://github.com/omeiirr/valodex',
-  },
+      'Get dummy data for development and testing purposes. Built with Go, AWS Lambda, and API Gateway',
+    techUsed: ['golang', 'aws'],
+    demoLink: 'https://fl8peowhy3.execute-api.ap-south-1.amazonaws.com/v1/users',
+    githubLink: 'https://github.com/omeiirr/dummy-data-api',
+  }
 ];
 
 export const allProjects = [
