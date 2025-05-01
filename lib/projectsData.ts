@@ -9,6 +9,15 @@ export const mainProjects = [
     githubLink: 'https://github.com/omeiirr/schedd',
   },
   {
+    title: 'Instagram Detective',
+    img: 'https://github.com/user-attachments/assets/6e37296e-8111-4e1d-bff1-37dd35e338c8',
+    description:
+      ` A private, secure Instagram analyzer - For everyone who's ever wondered, "Did they unfollow me?"`,
+    techUsed: ['javascript', 'tailwind'],
+    demoLink: 'https://omeiirr.github.io/instagram-analyzer/',
+    githubLink: 'https://github.com/omeiirr/instagram-analyzer',
+  },
+  {
     title: 'React Table Demo',
     img: 'https://user-images.githubusercontent.com/54888682/213927867-702ace64-9b6b-4847-825b-6f3ee72971b4.png',
     description:
@@ -37,6 +46,15 @@ export const allProjects = [
     techUsed: ['nextjs', 'tailwind'],
     demoLink: 'https://schedd.vercel.app',
     githubLink: 'https://github.com/omeiirr/schedd',
+  },
+  {
+    title: 'Instagram Detective',
+    img: 'https://github.com/user-attachments/assets/6e37296e-8111-4e1d-bff1-37dd35e338c8',
+    description:
+      ` A private, secure Instagram analyzer - For everyone who's ever wondered, "Did they unfollow me?"`,
+    techUsed: ['javascript', 'tailwind'],
+    demoLink: 'https://omeiirr.github.io/instagram-analyzer/',
+    githubLink: 'https://github.com/omeiirr/instagram-analyzer',
   },
   {
     title: 'React Table Demo',
