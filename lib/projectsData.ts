@@ -48,6 +48,15 @@ export const allProjects = [
     githubLink: 'https://github.com/omeiirr/instagram-analyzer',
   },
   {
+    title: 'Quran CLI',
+    img: 'https://github.com/omeiirr/quran-cli/assets/54888682/0af0e82e-9f71-44cd-a027-9b58bc3bd695',
+    description:
+      'A command line app to read Quran, get daily verses, search for keywords, and more.',
+    techUsed: ['golang'],
+    demoLink: 'https://github.com/omeiirr/quran-cli/assets/54888682/0af0e82e-9f71-44cd-a027-9b58bc3bd695',
+    githubLink: 'https://github.com/omeiirr/quran-cli',
+  },
+  {
     title: 'React Table Demo',
     img: 'https://user-images.githubusercontent.com/54888682/213927867-702ace64-9b6b-4847-825b-6f3ee72971b4.png',
     description:
