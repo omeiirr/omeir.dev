@@ -1,33 +1,3 @@
-export const mainProjects = [
-  {
-    title: 'Schedd',
-    img: 'https://user-images.githubusercontent.com/54888682/176943061-433e7020-6b9f-42b1-ab54-b8aa9efac4b7.png',
-    description:
-      ' A Progressive Web App built with Next.js and TailwindCSS to check your university classes, attendance, grades, faculty, and more.',
-    techUsed: ['nextjs', 'tailwind'],
-    demoLink: 'https://schedd.xyz',
-    githubLink: 'https://github.com/omeiirr/schedd',
-  },
-  {
-    title: 'Instagram Detective',
-    img: 'https://github.com/user-attachments/assets/6e37296e-8111-4e1d-bff1-37dd35e338c8',
-    description:
-      ` A private, secure Instagram analyzer - For everyone who's ever wondered, "Did they unfollow me?"`,
-    techUsed: ['javascript', 'tailwind'],
-    demoLink: 'https://omeiirr.github.io/instagram-analyzer/',
-    githubLink: 'https://github.com/omeiirr/instagram-analyzer',
-  },
-  {
-    title: 'Dummy Data API',
-    img: '',
-    description:
-      'Get dummy data for development and testing purposes. Built with Go, AWS Lambda, and API Gateway',
-    techUsed: ['golang', 'aws'],
-    demoLink: 'https://fl8peowhy3.execute-api.ap-south-1.amazonaws.com/v1/users',
-    githubLink: 'https://github.com/omeiirr/dummy-data-api',
-  }
-];
-
 export const allProjects = [
   {
     title: 'Schedd',
@@ -49,7 +19,7 @@ export const allProjects = [
   },
   {
     title: 'Quran CLI',
-    img: 'https://github.com/omeiirr/quran-cli/assets/54888682/0af0e82e-9f71-44cd-a027-9b58bc3bd695',
+    img: 'https://github.com/user-attachments/assets/e2667293-2ec4-449b-82b1-f239ef861355',
     description:
       'A command line app to read Quran, get daily verses, search for keywords, and more.',
     techUsed: ['golang'],

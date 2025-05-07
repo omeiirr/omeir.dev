@@ -14,7 +14,7 @@ const FeaturedProjects = () => {
     <>
       <h3 className='heading-text'>Featured Projects</h3>
 
-      {allProjects.slice(0,3).map((project, idx) => (
+      {allProjects.slice(0,4).map((project, idx) => (
         <ProjectCard
           key={idx}
           title={project.title}
