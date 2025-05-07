@@ -19,7 +19,7 @@ export const allProjects = [
   },
   {
     title: 'Quran CLI',
-    img: 'https://github.com/user-attachments/assets/e2667293-2ec4-449b-82b1-f239ef861355',
+    img: '/showcase/quran-cli-showcase.png',
     description:
       'A command line app to read Quran, get daily verses, search for keywords, and more.',
     techUsed: ['golang'],
